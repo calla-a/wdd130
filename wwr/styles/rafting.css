@@ -113,7 +113,7 @@ h2 {
     place-items: center;
     margin: 100px 30px 30px;
     padding: 20px 30px 50px;
-    width: 100;
+    width: auto;
     background-color: var(--accent2-color);
 }
 
