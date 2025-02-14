@@ -1,27 +1,35 @@
 :root {
-    --primary-color: #354F52;
-    --secondary-color: #CAD2C5;
-    --accent1-color: #84A98C;
-    --accent2-color: #52796F;
+    --primary-color: #000000;
+    --secondary-color: #21345f;
+    --accent1-color: #5e87e9;
+    --accent2-color: #fdc66c;
+    --font-titles: 'Inter', sans-serif;
+    --font-body-other: 'Open Sans', sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--primary-color);
-    max-width: 1200px;
-    margin: auto;
+    font-family: var(--font-body-other);
 }
 
+h1, h2 {
+    font-family: var(--font-titles);
+}
 
-h1,
-h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    color: var(--secondary-color);
+* {
+    margin: 0.5rem;
+    box-sizing: border-box;
+}
+
+header a {
+    font-family: var(--font-titles);
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 6px;
 }
 
 p {
-    color: var(--accent1-color);
+    font-family: var(--font-body-other);
 }
 
 a {
@@ -29,55 +37,159 @@ a {
     color: var(--primary-color);
 }
 
-a img {
-    border: none;
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.346);
 }
 
-.header,
-.hero,
-.footer {
-    max-width: 1200px;
-    margin: 0 auto;
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 100%;
+    background-color: var(--accent2-color);
+}
+
+.logo_box {
+    margin-left: 50px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.navigation li {
+    flex: 1;
+}
+
+h2 {
+    color: var(--secondary-color);
 }
 
 .hero {
     position: relative;
-    text-align: center;
 }
 
 .hero img {
-    width: 100%;
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
     position: absolute;
-    top: 5%;
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.622);
+    width: 100%;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 15px;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #ffffffcb;
+    width: 85%;
     color: var(--secondary-color);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    
 }
 
-.hero .over {
-    position: absolute;
-    bottom: 1%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-}
-
-.hero .over img {
+.hero article img {
     float: right;
     width: 300px;
-    margin-left: 15px;
+    height: auto;
 }
 
-footer .sociallinks a img {
-    border: none;
-}
-
-article.over {
+.gridhistory {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    place-items: center;
+    margin: 100px 30px 30px;
+    padding: 20px 30px 50px;
+    width: 100;
     background-color: var(--accent2-color);
-    opacity: 0.9;
-    padding: 10px
+}
+
+.gridhistory h2 {
+    align-self: center;
+    grid-column: 1 / -1;
+    margin: 0 0 20px 0;
+}
+
+.gridhistory .firstpart,
+.gridhistory .secondpart {
+    align-self: start;
+}
+
+.gridhistory .image-container {
+    grid-column: 2/3;
+    align-self: start;
+}
+
+.gridhistory img {
+    width: 200px;
+    height: auto;
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+}
+
+.gridadventure {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6rem 30px;
+    padding: 20px 10px 30px;
+    background-color: var(--accent2-color);
+}
+
+.gridadventure h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.gridadventure img {
+    width: 200px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    justify-content: center;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 10px;
+    width: 100%;
+    flex-direction: row;
+    background-color: var(--accent2-color);
+}
+
+footer img {
+    width: 35px;
+    margin: 0;
+}
+
+footer nav {
+    justify-self: flex-end;
+}
+
+.p {
+    grid-column: 1/2;
+    justify-self: center;
+    position: absolute;
+    align-self: flex-end;
+    
+}
