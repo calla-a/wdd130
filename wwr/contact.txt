@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Whitewater Wonders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo_box">
+            <img src="images/rafting-logo.png" alt="Whitewater Wonders logo">
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p><strong>Address:</strong> 123 Rafting Adventure Lane, Quetzaltenango, Guatemala</p>
+            <p><strong>Phone:</strong> +502 1234 5678</p>
+            <p><strong>Email:</strong> info@whitewaterwonders.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123416.0333011878!2d-91.60339991660908!3d14.83922422656744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e97fe3fc89d3f%3A0x3ba7ff011f0f000f!2sQuetzaltenango!5e0!3m2!1ses-419!2sgt!4v1739871628746!5m2!1ses-419!2sgt" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/rafting_guide.jp" alt="Rafting Guide">
+                <figcaption>Billy James - Rafting Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/reservations_agent.jp" alt="Reservations Agent">
+                <figcaption>Janira Palma - Reservations Agent</figcaption>
+            </figure>
+            <figure>
+                <img src="images/customer_service.jp" alt="Customer Service">
+                <figcaption>Karla Camacho - Customer Service</figcaption>
+            </figure>
+        </section>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="your-form-handler.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>               
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="purpose">Purpose of Message:</label>
+                <div>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>           
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>               
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>               
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="p">&copy; 2025 Whitewater Wonders Raul Rosales</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-icon.png" alt="X">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-icon.png" alt="instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
