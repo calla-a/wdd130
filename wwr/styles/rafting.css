@@ -336,3 +336,9 @@ footer nav {
     position: absolute;
     align-self: flex-end; 
 }
+
+.p2{
+    justify-self: flex-start;
+    position: absolute;
+    align-self: flex-end; 
+}
