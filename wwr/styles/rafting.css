@@ -340,5 +340,17 @@ footer nav {
 .p2{
     justify-self: flex-start;
     position: absolute;
-    align-self: flex-end; 
+    align-self: flex-end;
+}
+
+.p2 a {
+    color: var(--accent1-color);
+    text-decoration: underline;
+    font-weight: bold; 
+}
+
+.p2 a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
 }
