@@ -10,9 +10,11 @@
 
 body {
     font-family: var(--font-body-other);
+    background-color: #fff9e6;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--font-titles);
 }
 
@@ -215,7 +217,8 @@ figure {
     border-radius: 8px;
 }
 
-.contact-details p, .team-section figcaption {
+.contact-details p,
+.team-section figcaption {
     color: var(--primary-color);
 }
 
@@ -267,6 +270,7 @@ figure {
 .team-section figcaption {
     color: var(--primary-color);
 }
+
 .message-section {
     max-width: 600px;
     margin: auto;
@@ -334,19 +338,19 @@ footer nav {
 
     justify-self: center;
     position: absolute;
-    align-self: flex-end; 
+    align-self: flex-end;
 }
 
-.p2{
+.p2 {
     justify-self: flex-start;
     position: absolute;
     align-self: flex-end;
 }
 
 .p2 a {
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     text-decoration: underline;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .p2 a:hover {
