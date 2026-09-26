@@ -1,5 +1,15 @@
+:root {
+    --main-color: darkblue
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 
@@ -8,12 +18,19 @@ main {
 }
 
 aside {
+    position: relative;
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 10px;
     background-color: beige;
     color: black;
+}
+
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 60px;
 }
 
 aside img {
@@ -32,6 +49,7 @@ h1 {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -47,4 +65,13 @@ footer {
     margin-top: 10px;
     border-top: 1px solid black;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 20%);
+    padding: 1rem;
+    background-color: beige;
+    color: black;
 }
