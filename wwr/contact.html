@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Rafting Adventure</title>
+    <meta name="description"
+      content="Rafting Site Project Contact Us page. This page will work as the Contact Us Page for my Rafting Site Project">
+    <meta name="author" content="Raul Rosales">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/rafting-site-logo.webp" alt="Rafting Site Logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="info">
+            <h2>Dunder Mifflin Paper Company</h2>
+            <p>1725 Slough Avenue, Suite 200</p>
+            <p>Scranton, Pennsylvania</p>
+            <p>+1 911 911 6769</p>
+            <p>info@dundermifflin.com</p>
+        </section>
+
+        <section class="contact">
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450937!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064bf5e655f%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1633000000000!5m2!1sen!2sus"
+                  width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                  title="Map Location">
+                </iframe>
+            </div>
+
+            <form>
+                <div class="form-item">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="username" placeholder="Placeholder"
+                      required>
+                </div>
+
+                <div class="form-item">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="Placeholder"
+                      required>
+                </div>
+
+                <fieldset class="purpose">
+                    <legend>Message Purpose</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general" checked> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"
+                      placeholder="Type here"></textarea>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit" class="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <figure>
+                <img src="images/rafting-site-logo.webp" alt="John Doe - Operations Manager">
+                <figcaption>Michael Scott - Regional Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting-site-logo.webp" alt="Jane Smith - Lead River Guide">
+                <figcaption>Dwigth Schrute - Assistant to the Regional Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting-site-logo.webp" alt="Alex Johnson - Safety Coordinator">
+                <figcaption>Jim Halpert - Sales Representative</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rafting Adventures - Raul Rosales</p>
+        <nav class="socialmedia">
+            <a href="facebook.com">
+                <img src="images/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="instagram.com">
+                <img src="images/instagram-logo.png" alt="instagram">
+            </a>
+            <a href="tiktok.com">
+                <img src="images/tiktok-logo.png" alt="TikTok">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
