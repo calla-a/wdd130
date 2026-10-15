@@ -145,6 +145,7 @@ section h2 {
     padding: 20px;
     color: var(--accent1-color);
     background-color: rgba(130, 235, 255, 0.6);
+    border-radius: 10px;
 }
 
 .adventure h2 {
@@ -330,7 +331,8 @@ footer p {
     font-weight: bold;
 }
 
-.submit:hover {
+.submit:hover,
+.action-button:hover {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
 }
@@ -343,6 +345,7 @@ footer p {
     padding: 30px 40px;
     color: var(--accent1-color);
     background-color: rgba(130, 235, 255, 0.6);
+    border-radius: 10px;
 }
 
 .employees h2 {
@@ -364,7 +367,10 @@ footer p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.employees figure:hover {
+.employees figure:hover,
+.adventure figure:hover,
+.purpose:hover,
+.offerings:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-color: var(--secondary-color);
 }
@@ -383,4 +389,108 @@ footer p {
     background-color: var(--secondary-color);
     padding: 6px 10px;
     border-radius: 4px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+    background-color: rgba(130, 235, 255, 0.6);
+    border-radius: 10px;
+}
+
+.home-grid h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--accent1-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.purpose,
+.offerings {
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid var(--accent2-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.purpose img,
+.offerings img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.purpose h3,
+.offerings h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+}
+
+.action {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(130, 235, 255, 0.6);
+    border-top: 2px solid var(--accent2-color);
+    border-bottom: 2px solid var(--accent2-color);
+    border-radius: 10px;
+}
+
+.action h2 {
+    color: var(--accent1-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.action p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.newsletter {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid var(--accent2-color);
+    border-radius: 10px;
+    background-color: rgba(72, 202, 228, 0.08);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    color: var(--accent1-color);
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
 }
